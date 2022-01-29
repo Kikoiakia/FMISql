@@ -1,0 +1,8 @@
+Database:
+	Store data in Nodes which have size_t, string and dateTime pointers (because there can be more than one)
+	B-Tree (maybe red-black) to store nodes
+	Tables have string for name, string array for different column names, 
+	  short array with values {0,1,2} (0-int, 1-string, 2-dateTime) so you can store the order of data (int,string,string,int,date,...),
+	  pointer to one B-Tree and bools for each data type (size_t, string, dateTime)
+	Runtime program will have List of tables (some kind of array) and query handler
+	Save the database in bin file?
