@@ -63,7 +63,7 @@ FMISql> ListTables
 
 There is 1 table in the database:
 
-	Sample
+    Sample
 	
 FMISql> TableInfo Simple
 
@@ -91,14 +91,13 @@ Total 1 row selected
 
 FMISql> Select \* FROM Sample WHERE ID != 5 AND Name > "Baba" ORDER BY Name
 
-|ID| 	  Name		| Val |
+|ID|       Name     | Val |
 
 \---------------------------
 
 | 2|"something else"|  100|
 
-| 1|"Test"			|	 1|
-
+| 1|"Test"			|    1|
 Total 2 rows selected
 
 FMISql> Quit
