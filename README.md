@@ -56,29 +56,53 @@
 Примерна употреба:
 
 FMISql> CreateTable Sample (ID:Int, Name:String, Value:Int) Index ON ID
+
 Table Sample created!
+
 FMISql> ListTables
+
 There is 1 table in the database:
+
 	Sample
+	
 FMISql> TableInfo Simple
+
 There is no such table!
+
 FMISql> TableInfo Sample
+
 Table Sample : (ID:Int, Indexed; Name:String; Value:Int)
+
 Total 0 rows (0 KB data) in the table
+
 FMISql> Insert INTO Sample {(1, "Test", 1), (2, "something else", 100))
+
 Two rows inserted.
+
 FMISql> Select Name FROM Sample WHERE ID != 5 AND Value < 50
+
 | Name |
+
 \--------
+
 |"Test"|
+
 Total 1 row selected
+
 FMISql> Select \* FROM Sample WHERE ID != 5 AND Name > "Baba" ORDER BY Name
+
 |ID| 	  Name		| Val |
+
 \---------------------------
+
 | 2|"something else"|  100|
+
 | 1|"Test"			|	 1|
+
 Total 2 rows selected
+
 FMISql> Quit
+
 Goodbye
 
 
