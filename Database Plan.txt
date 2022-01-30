@@ -6,3 +6,21 @@ Database:
 	  pointer to one B-Tree and bools for each data type (size_t, string, dateTime)
 	Runtime program will have List of tables (some kind of array) and query handler
 	Save the database in bin file?
+
+Calculate memory usage:
+(sizeof(array_0) + sizeof(array_1) + sizeof(array_2) + ... + sizeof(array_k)) / 1048576.0 gives you the size in megabytes○
+The sizeof(a) function returns the size of array a in bytes, so you need to divide the result by 2^20 = 1048576 to convert it into megabytes.
+
+
+Literature:
+	"Fundamentals of Database Systems" - Ramez Elmasri
+	https://books.google.co.in/books?id=v_j0CSS3m7MC&printsec=frontcover&dq=Fundamentals%20of%20Database%20Systems&hl=en&sa=X&ei=kZ7IVMWMJcLm8AXyuYCoCA&ved=0CB4Q6AEwAA#v%3Donepage%26q%3DFundamentals%20of%20Database%20Systems%26f%3Dfalse
+	ISBN	8131716252, 9788131716250
+
+	"C - Data Base Development" - Al Stevens
+	https://books.google.co.in/books?id=EduSNAEACAAJ&dq=editions%3AzDeJ6AKhOX4C&hl=en&sa=X&ei=e53IVLGfDsvi8AWXuIKIBw&ved=0CBwQ6AEwAA
+	ISBN	817029018X, 9788170290186	
+
+	"C++ Database Development" - Al Stevens
+	https://books.google.co.in/books?id=YLi2kQEACAAJ&dq=editions%3AzDeJ6AKhOX4C&hl=en&sa=X&ei=e53IVLGfDsvi8AWXuIKIBw&ved=0CCYQ6AEwAg
+	ISBN	1558283579, 9781558283572
